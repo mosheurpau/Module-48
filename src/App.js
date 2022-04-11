@@ -6,6 +6,7 @@ import Inventory from "./components/Inventory/Inventory";
 import Login from "./components/Login/Login";
 import Orders from "./components/Orders/Orders";
 import RequirAuth from "./components/RequirAuth/RequirAuth";
+import Shipment from "./components/Shipment/Shipment";
 import Shop from "./components/Shop/Shop";
 import SignUp from "./components/SignUp/SignUp";
 
@@ -22,6 +23,14 @@ function App() {
           element={
             <RequirAuth>
               <Inventory></Inventory>
+            </RequirAuth>
+          }
+        ></Route>
+        <Route
+          path="/shipment"
+          element={
+            <RequirAuth>
+              <Shipment></Shipment>
             </RequirAuth>
           }
         ></Route>
